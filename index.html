@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HV Repuestos y Accesorios del Automotor — Berazategui. Tren delantero, frenos, encendido, distribución, radiadores, aceites, filtros, baterías, faros y más." />
+  <title>HV Repuestos y Accesorios del Automotor | Berazategui</title>
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="HV Repuestos y Accesorios del Automotor" />
+  <meta property="og:description" content="Todo lo que tu vehículo necesita en un solo lugar. Berazategui, Buenos Aires." />
+  <meta property="og:locale"      content="es_AR" />
+  <meta name="theme-color"        content="#3a7d2c" />
+
+  <!-- Favicon inline SVG -->
+  <link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner container">
+      <a href="#inicio" class="navbar__logo" aria-label="HV Repuestos — inicio">
+        <img src="assets/logo/logo-placeholder.svg" alt="HV Repuestos" class="navbar__logo-img" width="160" height="48" />
+      </a>
+      <nav class="navbar__nav" id="navMenu">
+        <a href="#productos" class="nav-link">Productos</a>
+        <a href="#marcas" class="nav-link">Marcas</a>
+        <a href="#ubicacion" class="nav-link">Ubicación</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+        <a href="https://wa.me/541179715000?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20sobre%20repuestos" class="btn btn--whatsapp nav-wa-mobile" target="_blank" rel="noopener">
+          <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.857L.057 23.571a.75.75 0 0 0 .921.921l5.714-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 0 1-4.953-1.356l-.356-.211-3.688.952.975-3.561-.231-.367A9.717 9.717 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+          Consultar por WhatsApp
+        </a>
+      </nav>
+      <a href="https://wa.me/541179715000?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20sobre%20repuestos" class="btn btn--whatsapp" target="_blank" rel="noopener">
+        <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.857L.057 23.571a.75.75 0 0 0 .921.921l5.714-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 0 1-4.953-1.356l-.356-.211-3.688.952.975-3.561-.231-.367A9.717 9.717 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+        WhatsApp
+      </a>
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══ HERO ═══ -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg-overlay"></div>
+      <div class="container hero__content">
+        <p class="hero__eyebrow">Berazategui · Buenos Aires</p>
+        <h1 class="hero__title">Repuestos y<br><span class="text-green">Accesorios</span><br>del Automotor</h1>
+        <p class="hero__subtitle">Todo lo que tu vehículo necesita en un solo lugar.<br>Calidad garantizada y atención personalizada.</p>
+        <div class="hero__ctas">
+          <a href="https://wa.me/541179715000?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20sobre%20repuestos" class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener">
+            <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.857L.057 23.571a.75.75 0 0 0 .921.921l5.714-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 0 1-4.953-1.356l-.356-.211-3.688.952.975-3.561-.231-.367A9.717 9.717 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+            Consultar por WhatsApp
+          </a>
+          <a href="#productos" class="btn btn--outline btn--lg">Ver productos</a>
+        </div>
+      </div>
+      <div class="hero__scroll-hint">
+        <span>↓</span>
+      </div>
+    </section>
+
+    <!-- ═══ BENEFICIOS ═══ -->
+    <div class="beneficios">
+      <div class="container beneficios__grid">
+
+        <div class="beneficio">
+          <div class="beneficio__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <p class="beneficio__titulo">Calidad garantizada</p>
+            <p class="beneficio__desc">Solo trabajamos con marcas confiables y piezas originales o equivalentes.</p>
+          </div>
+        </div>
+
+        <div class="beneficio">
+          <div class="beneficio__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <p class="beneficio__titulo">Atención rápida</p>
+            <p class="beneficio__desc">Respondemos tu consulta por WhatsApp a la brevedad, sin vueltas.</p>
+          </div>
+        </div>
+
+        <div class="beneficio">
+          <div class="beneficio__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div>
+            <p class="beneficio__titulo">Precios competitivos</p>
+            <p class="beneficio__desc">Stock propio y relación directa con distribuidores para darte el mejor precio.</p>
+          </div>
+        </div>
+
+        <div class="beneficio">
+          <div class="beneficio__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div>
+            <p class="beneficio__titulo">+15 años en el rubro</p>
+            <p class="beneficio__desc">Experiencia y conocimiento técnico para asesorarte en cada compra.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ═══ PRODUCTOS ═══ -->
+    <section class="section productos" id="productos">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Lo que ofrecemos</p>
+          <h2 class="section-title">Nuestros <span class="text-green">Productos</span></h2>
+          <p class="section-desc">Amplio stock de repuestos y accesorios para todo tipo de vehículos.</p>
+        </div>
+        <div class="productos__grid">
+
+          <article class="product-card">
+            <div class="product-card__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="24" cy="24" r="10"/>
+                <circle cx="24" cy="24" r="4"/>
+                <line x1="24" y1="4" x2="24" y2="14"/>
+                <line x1="24" y1="34" x2="24" y2="44"/>
+                <line x1="4" y1="24" x2="14" y2="24"/>
+                <line x1="34" y1="24" x2="44" y2="24"/>
+              </svg>
+            </div>
+            <h3 class="product-card__title">Tren Delantero</h3>
+            <p class="product-card__desc">Rótulas, bujes, amortiguadores, barras y todo el sistema de dirección y suspensión.</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="24" cy="24" r="14"/>
+                <circle cx="24" cy="24" r="6"/>
+                <path d="M24 10 L26 18 L24 18"/>
+                <path d="M38 24 L30 26 L30 24"/>
+                <path d="M24 38 L22 30 L24 30"/>
+                <path d="M10 24 L18 22 L18 24"/>
+              </svg>
+            </div>
+            <h3 class="product-card__title">Frenos</h3>
+            <p class="product-card__desc">Pastillas, discos, tambores, zapatas, bombas y líquido de frenos para toda marca.</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 36 L8 28 L12 12 L24 8 L36 12 L40 28 L36 36 Z"/>
+                <circle cx="24" cy="22" r="6"/>
+                <line x1="24" y1="8" x2="24" y2="16"/>
+                <line x1="24" y1="28" x2="24" y2="36"/>
+              </svg>
+            </div>
+            <h3 class="product-card__title">Encendido</h3>
+            <p class="product-card__desc">Bujías, cables, bobinas, distribuidores y componentes del sistema de encendido.</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="8" y="16" width="32" height="16" rx="2"/>
+                <path d="M16 16 L16 10 M32 16 L32 10"/>
+                <path d="M16 32 L16 38 M32 32 L32 38"/>
+                <line x1="20" y1="22" x2="20" y2="26"/>
+                <line x1="24" y1="22" x2="24" y2="26"/>
+                <line x1="28" y1="22" x2="28" y2="26"/>
+              </svg>
+            </div>
+            <h3 class="product-card__title">Kit de Distribución</h3>
+            <p class="product-card__desc">Correas, tensores, guías y kits completos de distribución para tu motor.</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="6" y="14" width="36" height="20" rx="3"/>
+                <path d="M12 14 L12 8 M36 14 L36 8"/>
+                <line x1="6" y1="22" x2="42" y2="22"/>
+                <line x1="14" y1="22" x2="14" y2="34"/>
+                <line x1="22" y1="22" x2="22" y2="34"/>
+                <line x1="30" y1="22" x2="30" y2="34"/>
+                <line x1="38" y1="22" x2="38" y2="34"/>
+              </svg>
+            </div>
+            <h3 class="product-card__title">Radiadores</h3>
+            <p class="product-card__desc">Radiadores de agua y aceite, tapas, termostatos y mangueras de refrigeración.</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 8 L28 8 L32 14 L32 38 L16 38 L16 14 Z"/>
+                <path d="M22 14 L26 14 L26 18 L22 18 Z"/>
+                <path d="M19 28 L29 28"/>
+                <path d="M24 22 L24 34"/>
+              </svg>
+            </div>
+            <h3 class="product-card__title">Aceites</h3>
+            <p class="product-card__desc">Aceites de motor, caja y diferencial de las mejores marcas, para todo tipo de vehículos.</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="10" y="10" width="28" height="28" rx="14"/>
+                <circle cx="24" cy="24" r="6"/>
+                <path d="M24 10 L24 18"/>
+                <path d="M24 30 L24 38"/>
+                <path d="M10 24 L18 24"/>
+                <path d="M30 24 L38 24"/>
+              </svg>
+            </div>
+            <h3 class="product-card__title">Filtros</h3>
+            <p class="product-card__desc">Filtros de aceite, aire, combustible y habitáculo para mantener tu motor en óptimas condiciones.</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="8" y="14" width="32" height="22" rx="2"/>
+                <path d="M16 14 L16 10 M32 14 L32 10"/>
+                <line x1="8" y1="22" x2="40" y2="22"/>
+                <path d="M16 28 L20 28 M28 28 L32 28"/>
+                <path d="M4 20 L8 20 M40 20 L44 20"/>
+              </svg>
+            </div>
+            <h3 class="product-card__title">Baterías</h3>
+            <p class="product-card__desc">Baterías de arranque para autos, camionetas y vehículos comerciales con garantía.</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 30 L24 10 L40 30 L34 38 L14 38 Z"/>
+                <circle cx="24" cy="26" r="6"/>
+                <circle cx="24" cy="26" r="2"/>
+                <line x1="24" y1="10" x2="24" y2="20"/>
+              </svg>
+            </div>
+            <h3 class="product-card__title">Faros y Ópticas</h3>
+            <p class="product-card__desc">Faros delanteros, ópticas traseras, luces de posición y accesorios de iluminación.</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 20 Q4 14 10 14 L38 14 Q44 14 44 20 L44 28 Q44 32 40 32 L8 32 Q4 32 4 28 Z"/>
+                <path d="M12 14 L10 8 M36 14 L38 8"/>
+                <circle cx="14" cy="32" r="4"/>
+                <circle cx="34" cy="32" r="4"/>
+              </svg>
+            </div>
+            <h3 class="product-card__title">Paragolpes</h3>
+            <p class="product-card__desc">Paragolpes delanteros y traseros, molduras, grillas y accesorios de carrocería.</p>
+          </article>
+
+          <article class="product-card product-card--highlight">
+            <div class="product-card__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="6" y="10" width="36" height="28" rx="4"/>
+                <path d="M14 38 L10 44 M34 38 L38 44"/>
+                <circle cx="14" cy="30" r="3"/>
+                <circle cx="34" cy="30" r="3"/>
+                <path d="M6 20 L42 20"/>
+                <path d="M6 26 L14 26 M34 26 L42 26"/>
+              </svg>
+            </div>
+            <h3 class="product-card__title">Autopartes</h3>
+            <p class="product-card__desc">Amplia variedad de autopartes generales. Si no lo encontrás en otro lado, consultanos.</p>
+            <span class="product-card__badge">Consultar</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ MARCAS ═══ -->
+    <section class="section marcas" id="marcas">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Trabajamos con</p>
+          <h2 class="section-title">Principales <span class="text-green">Marcas</span></h2>
+        </div>
+      </div>
+      <div class="marcas__track-wrapper">
+        <div class="marcas__track">
+          <div class="marcas__item marcas__item--placeholder">
+            <div class="brand-placeholder">Logo marca 1</div>
+          </div>
+          <div class="marcas__item marcas__item--placeholder">
+            <div class="brand-placeholder">Logo marca 2</div>
+          </div>
+          <div class="marcas__item marcas__item--placeholder">
+            <div class="brand-placeholder">Logo marca 3</div>
+          </div>
+          <div class="marcas__item marcas__item--placeholder">
+            <div class="brand-placeholder">Logo marca 4</div>
+          </div>
+          <div class="marcas__item marcas__item--placeholder">
+            <div class="brand-placeholder">Logo marca 5</div>
+          </div>
+          <div class="marcas__item marcas__item--placeholder">
+            <div class="brand-placeholder">Logo marca 6</div>
+          </div>
+          <div class="marcas__item marcas__item--placeholder">
+            <div class="brand-placeholder">Logo marca 7</div>
+          </div>
+          <div class="marcas__item marcas__item--placeholder">
+            <div class="brand-placeholder">Logo marca 8</div>
+          </div>
+          <!-- Duplicado para loop infinito -->
+          <div class="marcas__item marcas__item--placeholder" aria-hidden="true">
+            <div class="brand-placeholder">Logo marca 1</div>
+          </div>
+          <div class="marcas__item marcas__item--placeholder" aria-hidden="true">
+            <div class="brand-placeholder">Logo marca 2</div>
+          </div>
+          <div class="marcas__item marcas__item--placeholder" aria-hidden="true">
+            <div class="brand-placeholder">Logo marca 3</div>
+          </div>
+          <div class="marcas__item marcas__item--placeholder" aria-hidden="true">
+            <div class="brand-placeholder">Logo marca 4</div>
+          </div>
+          <div class="marcas__item marcas__item--placeholder" aria-hidden="true">
+            <div class="brand-placeholder">Logo marca 5</div>
+          </div>
+          <div class="marcas__item marcas__item--placeholder" aria-hidden="true">
+            <div class="brand-placeholder">Logo marca 6</div>
+          </div>
+          <div class="marcas__item marcas__item--placeholder" aria-hidden="true">
+            <div class="brand-placeholder">Logo marca 7</div>
+          </div>
+          <div class="marcas__item marcas__item--placeholder" aria-hidden="true">
+            <div class="brand-placeholder">Logo marca 8</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ UBICACIÓN + HORARIOS ═══ -->
+    <section class="section ubicacion" id="ubicacion">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Encontranos</p>
+          <h2 class="section-title">Ubicación y <span class="text-green">Horarios</span></h2>
+        </div>
+        <div class="ubicacion__grid">
+          <div class="ubicacion__info">
+            <div class="info-block">
+              <div class="info-block__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="info-block__title">Dirección</h3>
+                <p class="info-block__text">Av. 14 Rigolleau N°3102<br>Esquina 131, Berazategui<br>Buenos Aires, Argentina</p>
+              </div>
+            </div>
+
+            <div class="info-block">
+              <div class="info-block__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.45 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.94-.94a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="info-block__title">Teléfono / WhatsApp</h3>
+                <a href="tel:+541179715000" class="info-block__link">+54 11 7971-5000</a>
+                <a href="https://wa.me/541179715000" class="info-block__link wa-link" target="_blank" rel="noopener">Escribir por WhatsApp →</a>
+              </div>
+            </div>
+
+            <div class="info-block">
+              <div class="info-block__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="info-block__title">Horarios de Atención</h3>
+                <div class="horarios">
+                  <div class="horario-row">
+                    <span class="horario-dia">Lunes a Viernes</span>
+                    <span class="horario-hora">8:00 – 18:00 hs</span>
+                  </div>
+                  <div class="horario-row">
+                    <span class="horario-dia">Sábados</span>
+                    <span class="horario-hora">8:00 – 14:00 hs</span>
+                  </div>
+                  <div class="horario-row horario-row--closed">
+                    <span class="horario-dia">Domingos y Feriados</span>
+                    <span class="horario-hora">Cerrado</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ubicacion__mapa">
+            <div class="mapa__loading" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Cargando mapa…</span>
+            </div>
+            <iframe
+              title="Ubicación HV Repuestos en Google Maps"
+              src="https://maps.google.com/maps?q=Av+14+Rigolleau+3102+Berazategui+Buenos+Aires+Argentina&z=16&output=embed&hl=es"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              onload="this.previousElementSibling.style.display='none'">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CTA FINAL ═══ -->
+    <section class="cta-final" id="contacto">
+      <div class="container cta-final__inner">
+        <h2 class="cta-final__title">¿Necesitás un repuesto?</h2>
+        <p class="cta-final__text">Consultanos por WhatsApp y te respondemos a la brevedad.<br>Atención personalizada y precios competitivos.</p>
+        <a href="https://wa.me/541179715000?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20sobre%20repuestos" class="btn btn--white btn--lg" target="_blank" rel="noopener">
+          <svg class="wa-icon wa-icon--dark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.857L.057 23.571a.75.75 0 0 0 .921.921l5.714-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 0 1-4.953-1.356l-.356-.211-3.688.952.975-3.561-.231-.367A9.717 9.717 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+          Escribir por WhatsApp
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo-text">HV <span class="text-green">REPUESTOS</span></span>
+        <p class="footer__tagline">Repuestos y Accesorios del Automotor</p>
+      </div>
+      <div class="footer__data">
+        <p>Av. 14 Rigolleau N°3102 esq. 131</p>
+        <p>Berazategui, Buenos Aires</p>
+        <a href="tel:+541179715000" class="footer__tel">+54 11 7971-5000</a>
+      </div>
+      <div class="footer__hours">
+        <p>Lun–Vie: 8:00 – 18:00 hs</p>
+        <p>Sáb: 8:00 – 14:00 hs</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> HV Repuestos y Accesorios del Automotor. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ BOTÓN FLOTANTE WHATSAPP ═══ -->
+  <a href="https://wa.me/541179715000?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20sobre%20repuestos" class="wa-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.857L.057 23.571a.75.75 0 0 0 .921.921l5.714-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 0 1-4.953-1.356l-.356-.211-3.688.952.975-3.561-.231-.367A9.717 9.717 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+    <span class="wa-float__tooltip">¡Consultanos!</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
