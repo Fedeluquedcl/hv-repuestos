@@ -937,6 +937,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   text-align: center;
 }
 
+.footer__dev-link {
+  color: var(--gray);
+  transition: color var(--transition);
+}
+.footer__dev-link:hover { color: var(--green-bright); }
+
 
 /* ═══════════════════════════════════════════════
    BOTÓN FLOTANTE WHATSAPP
